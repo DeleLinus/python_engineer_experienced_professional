@@ -65,8 +65,13 @@ def sniff_schema(filepath):
                                     "tag": "",
                                     "description": "",
                                     "required": False}
-            elif type(value) == int or type(value) == float:
+            elif type(value) == float:
                 output_dict[key] = {"type": "number",
+                                    "tag": "",
+                                    "description": "",
+                                    "required": False}
+            elif type(value) == int:
+                output_dict[key] = {"type": "integer",
                                     "tag": "",
                                     "description": "",
                                     "required": False}
@@ -77,6 +82,11 @@ def sniff_schema(filepath):
                                         "description": "",
                                         "required": False}
                 elif type(value[0]) == dict:
+                    output_dict[key] = {"type": "array",
+                                        "tag": "",
+                                        "description": "",
+                                        "required": False}
+                else:
                     output_dict[key] = {"type": "array",
                                         "tag": "",
                                         "description": "",
@@ -135,6 +145,5 @@ if __name__ == "__main__":
         for file in all_files:
             sniff_result_dict, file_number = sniff_schema(file)
             load(sniff_result_dict=sniff_result_dict, file_number=file_number, output_folder_path="./schema/")
-            print("All files processed and dumped!")
     else:
         print("No files found in the data folder!")

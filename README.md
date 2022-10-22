@@ -7,8 +7,7 @@
 ## Table of Contents
 1. [ Project Description. ](#desc)
 2. [ Development Setup ](#setup)
-3. [ Installation Setup ](#installation)
-4. [ Details of Project ](#dcue)
+3. [ Running the program ](#installation)
 5. [ References ](#ref)
 
 <a name="desc"></a>

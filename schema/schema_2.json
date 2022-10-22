@@ -6,7 +6,7 @@
         "required": false
     },
     "time": {
-        "type": "number",
+        "type": "integer",
         "tag": "",
         "description": "",
         "required": false
