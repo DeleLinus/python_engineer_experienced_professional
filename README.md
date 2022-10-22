@@ -12,7 +12,7 @@
 5. [ References ](#ref)
 
 <a name="desc"></a>
-# ETL PIPELINE USING SCHIPOL API
+# Data2Bots Python Backend development Assessment 
 
 This is a program that:
 1. Reads a JSON file similar to what's present in this location (./data/)
