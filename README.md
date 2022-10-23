@@ -8,6 +8,7 @@
 1. [ Project Description. ](#desc)
 2. [ Development Setup ](#setup)
 3. [ Running the program ](#installation)
+4. [ Running the test ](#installation2)
 5. [ References ](#ref)
 
 <a name="desc"></a>
@@ -23,7 +24,7 @@ This is a program that:
 
 # Development Setup
 To run this system, you must have python installed on your computer.
-No third party library has been used for this program. The libraries leveraged include:
+No third party library has been used for the main program except for the program testing that uses `jsonschema`. The libraries leveraged for the main program include:
 * `os`
 * `glob`
 * `json`
@@ -33,7 +34,7 @@ which are readily available with python.
 
 > The program file initially included the `json_sniffer.py` module where the whole ETL implementation happened, 
 > and the `main.py` file that helps with seamless execution of the program. Another module containing the 
-> unit tests (`test_functions.py`), the README.md file, the given data folders.
+> unit tests (`test.py`), the `README.md`, `requirements.txt` files and the given data folders.
 
 <a name="installation"></a>
 # Running the program
@@ -46,6 +47,20 @@ Then run the program "main.py" to enjoy this program. output data will be in the
 ```bash
 $/> python main.py
 ```
+
+<a name="installation2"></a>
+# Running the test
+Ensure the required dependency (jsonschema==4.3.2) is installed by running the followiing command in terminal:
+NB: Ensure the working directory is set to the folder containing the `requirements.txt` file
+```bash
+$/> pip install -r requirements.txt
+```
+Then run the program "test.py":
+
+```bash
+$/> python test.py
+```
+
 
 <a name="ref"></a>
 ## References
